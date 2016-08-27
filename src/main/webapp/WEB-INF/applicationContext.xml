@@ -49,8 +49,7 @@
 		<property name="meecoMapping" ref="meecoMapping" />
 	</bean>
 
-	<bean id="meecoApi" class="xdi2.connector.meeco.api.MeecoApi" init-method="init" destroy-method="destroy">
-	</bean>
+	<bean id="meecoApi" class="xdi2.connector.meeco.api.MeecoApi" init-method="init" destroy-method="destroy" />
 
 	<bean id="meecoMapping" class="xdi2.connector.meeco.mapping.MeecoMapping" />
 
