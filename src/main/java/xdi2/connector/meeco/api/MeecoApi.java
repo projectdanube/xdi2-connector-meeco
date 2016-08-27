@@ -164,8 +164,8 @@ public class MeecoApi {
 			JsonElement name = ((JsonObject) json3).get("name");
 			if (name == null || name instanceof JsonNull) continue;
 
-			if (name.getAsString().equals("slots_attributes_city")) me.put(XDIAddress.create("<#locality>"), (JsonObject) json3);
-			if (name.getAsString().equals("slots_attributes_country")) me.put(XDIAddress.create("<#country>"), (JsonObject) json3);
+			if (name.getAsString().equals("slots_attributes_city")) me.put(XDIAddress.create("#address<#locality>"), (JsonObject) json3);
+			if (name.getAsString().equals("slots_attributes_country")) me.put(XDIAddress.create("#address<#country>"), (JsonObject) json3);
 			if (name.getAsString().equals("slots_attributes_email")) me.put(XDIAddress.create("<#email>"), (JsonObject) json3);
 			if (name.getAsString().equals("full_name")) {
 
