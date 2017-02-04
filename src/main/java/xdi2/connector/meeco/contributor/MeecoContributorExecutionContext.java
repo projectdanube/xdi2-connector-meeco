@@ -8,7 +8,7 @@ import org.json.JSONObject;
 import com.google.gson.JsonObject;
 
 import xdi2.core.syntax.XDIAddress;
-import xdi2.messaging.target.execution.ExecutionContext;
+import xdi2.messaging.container.execution.ExecutionContext;
 
 /**
  * Methods for storing state related to the MeecoContributor.
